@@ -6,18 +6,18 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 20:06:40 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/28 13:41:17 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 14:18:26 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_hex(unsigned int n)
 {
-	char	v;
+	char			v;
 	unsigned long	nb;
-	int		print;
-	char	*base;
+	int				print;
+	char			*base;
 
 	print = 0;
 	nb = n;
@@ -32,10 +32,10 @@ int	ft_hex(unsigned int n)
 
 int	ft_upperhex(unsigned int n)
 {
-	char	v;
+	char			v;
 	unsigned long	nb;
-	int		print;
-	char	*base;
+	int				print;
+	char			*base;
 
 	print = 0;
 	nb = n;

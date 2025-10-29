@@ -6,11 +6,11 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:34:03 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/27 17:57:37 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 10:57:33 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putchar(char c)
 {

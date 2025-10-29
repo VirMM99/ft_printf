@@ -6,18 +6,18 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 11:20:26 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/28 11:33:23 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 14:19:58 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	put_ptr(unsigned long n)
 {
-	char	v;
+	char			v;
 	unsigned long	nb;
-	int		print;
-	char	*base;
+	int				print;
+	char			*base;
 
 	print = 0;
 	nb = n;
@@ -34,7 +34,7 @@ int	ft_putptr(unsigned long n)
 {
 	int	x;
 	int	ptr;
-	
+
 	if (!n)
 		return (write(1, "(nil)", 5));
 	x = write(1, "0x", 2);

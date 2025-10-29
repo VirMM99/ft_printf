@@ -6,11 +6,11 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:45:13 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/28 11:42:27 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 14:17:59 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int n)
 {
@@ -35,9 +35,9 @@ int	ft_putnbr(int n)
 
 int	ft_uputnbr(unsigned int n)
 {
-	char	v;
+	char			v;
 	unsigned long	nb;
-	int		print;
+	int				print;
 
 	print = 0;
 	nb = n;
