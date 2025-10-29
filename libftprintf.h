@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:24:53 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/24 20:20:49 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/28 11:43:41 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFTPRINTF_H
 
 				//Inclusiones necesarias
+# include <stdarg.h> //va_...
 # include <stdlib.h> //MALLOC
 # include <unistd.h> //Write
 # include <string.h> //SIZE_T
@@ -23,12 +24,15 @@
 # include <bsd/string.h> //No se entrega
 # include <aio.h> //SIZE_T tmb...
 
-								// Declaracion de funciones (Obligatorias)
-int	ft_putstr(char *s);
-int	ft_putchar(char c);
-int	ft_putnbr_fd(int n);
-int	ft_uputnbr_fd(unsigned int n); //(????)
+								// Declaracion de funciones
 int	ft_hex(unsigned int n);
+int	ft_upperhex(unsigned int n);
+int	ft_printf(char const * format, ...);
+int	ft_putchar(char c);
+int	ft_putnbr(int n);
+int	ft_uputnbr(unsigned int n);
+int	ft_putptr(unsigned long n);
+int	ft_putstr(char *s);
 
 
 

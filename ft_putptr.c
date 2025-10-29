@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hex.c                                           :+:      :+:    :+:   */
+/*   ft_putptr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/24 20:06:40 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/28 13:41:17 by vimirand         ###   ########.fr       */
+/*   Created: 2025/10/28 11:20:26 by vimirand          #+#    #+#             */
+/*   Updated: 2025/10/28 11:33:23 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_hex(unsigned int n)
+static int	put_ptr(unsigned long n)
 {
 	char	v;
 	unsigned long	nb;
@@ -24,31 +24,26 @@ int	ft_hex(unsigned int n)
 	base = "0123456789abcdef";
 	if (nb >= 16)
 	{
-		print += ft_hex((nb / 16));
+		print += put_ptr((nb / 16));
 	}
 	v = base[nb % 16];
 	return (print + write(1, &v, sizeof(v)));
 }
 
-int	ft_upperhex(unsigned int n)
+int	ft_putptr(unsigned long n)
 {
-	char	v;
-	unsigned long	nb;
-	int		print;
-	char	*base;
-
-	print = 0;
-	nb = n;
-	base = "0123456789ABCDEF";
-	if (nb >= 16)
-	{
-		print += ft_upperhex((nb / 16));
-	}
-	v = base[nb % 16];
-	return (print + write(1, &v, sizeof(v)));
+	int	x;
+	int	ptr;
+	
+	if (!n)
+		return (write(1, "(nil)", 5));
+	x = write(1, "0x", 2);
+	ptr = put_ptr(n);
+	return (x + ptr);
 }
+
 // int main()
 // {
-// 	printf("%x\n", 42);
-// 	ft_hex(42);
+// 	printf("%p\n", (void *)NULL);
+// 	ft_putptr((unsigned long)NULL);
 // }

@@ -6,13 +6,13 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:45:13 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/24 20:06:17 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/28 11:42:27 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_putnbr_fd(int n)
+int	ft_putnbr(int n)
 {
 	char	v;
 	long	nb;
@@ -27,13 +27,13 @@ int	ft_putnbr_fd(int n)
 	}
 	if (nb >= 10)
 	{
-		print += ft_putnbr_fd((nb / 10));
+		print += ft_putnbr((nb / 10));
 	}
 	v = (nb % 10) + '0';
 	return (print + write(1, &v, sizeof(v)));
 }
 
-int	ft_uputnbr_fd(unsigned int n)
+int	ft_uputnbr(unsigned int n)
 {
 	char	v;
 	unsigned long	nb;
@@ -43,7 +43,7 @@ int	ft_uputnbr_fd(unsigned int n)
 	nb = n;
 	if (nb >= 10)
 	{
-		print += ft_uputnbr_fd((nb / 10));
+		print += ft_uputnbr((nb / 10));
 	}
 	v = (nb % 10) + '0';
 	return (print + write(1, &v, sizeof(v)));

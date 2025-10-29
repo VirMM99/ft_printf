@@ -6,6 +6,7 @@ SRCS = ft_printf.c \
 		ft_putchar.c \
 		ft_putnbr.c \
 		ft_hex.c \
+		ft_putptr.c
 
 BONUS_SRCS = 
 

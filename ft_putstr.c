@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:35:58 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/24 20:02:15 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/27 17:57:24 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int	ft_putstr(char *s)
 		return (write (1, "(null)", 6));
 	while(s[i])
 	{
+		write(1, &s[i], 1);
 		i++;
 	}
 	return (i);

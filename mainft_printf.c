@@ -6,36 +6,59 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:27:27 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/24 20:18:31 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/28 13:40:33 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libftprintf.h"
+
 int	main()
 {
-	ft_printf("1 %%c %c\n", );
-	printf("1 %c\n", );
+	int	mine;
+	int	orig;
+	
+	// mine = ft_printf("1: %c\n", 'a');
+	// orig = printf("1: %c\n", 'a');
 
-	ft_printf("2 %s\n", );
-	printf("2 %s\n", );
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
 
-	ft_printf("3 %p\n", );
-	printf("3 %p\n", );
+	// mine = ft_printf("2: %s\n", "Wasaaaaa");
+	// orig = printf("2: %s\n", "Wasaaaaa");
 
-	ft_printf("4 %d\n", );
-	printf("4 %d\n", );
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
 
-	ft_printf("5 %i\n", );
-	printf("5 %i\n", );
+	// mine = ft_printf("3: %p\n", (void *)1);
+	// orig = printf("3: %p\n", (void *)1);
 
-	ft_printf("6 %u\n", );
-	printf("6 %u\n", );
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
 
-	ft_printf("7 %x\n", );
-	printf("7 %x\n", );
+	// mine = ft_printf("4: %d\n", 4224);
+	// orig = printf("4: %d\n", 4224);
 
-	ft_printf("8 %X\n", );
-	printf("8 %X\n", );
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
 
-	ft_printf("9 %%\n", );
-	printf("9 %%\n", );
-}
+	// mine = ft_printf("5: %i\n", 4224);
+	// orig = printf("5: %i\n", 4224);
+
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
+
+	// mine = ft_printf("6: %u\n", 4224);
+	// orig = printf("6: %u\n", 4224);
+
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
+
+	// mine = ft_printf("7: %x\n", 4224);
+	// orig = printf("7: %x\n", 4224);
+
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
+
+	mine = ft_printf("8: %X\n", 2345678);
+	orig = printf("8: %X\n", 2345678);
+
+	printf("MIO: %d ORIG: %d\n", mine, orig);
+
+	// mine = ft_printf("9: %%\n");
+	// orig = printf("9: %%\n");
+
+	// printf("MIO: %d ORIG: %d\n", mine, orig);
+} 
