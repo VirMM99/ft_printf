@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 16:15:33 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/29 16:44:52 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/30 20:04:00 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,11 @@ static int	get_this(char const *format, int count, va_list args)
 		count += ft_hex(va_arg(args, unsigned int));
 	else if (*format == 'X')
 		count += ft_upperhex(va_arg(args, unsigned int));
+	else
+	{
+		count += ft_putchar('%');
+		count += write(1, format, 1);
+	}
 	return (count);
 }
 
@@ -38,6 +43,8 @@ int	ft_printf(char const *format, ...)
 	va_list	args;
 	int		count;
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	count = 0;
 	while (*format != '\0')

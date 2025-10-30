@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/28 11:20:26 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/29 14:19:58 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:28:55 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,3 @@ int	ft_putptr(unsigned long n)
 	ptr = put_ptr(n);
 	return (x + ptr);
 }
-
-// int main()
-// {
-// 	printf("%p\n", (void *)NULL);
-// 	ft_putptr((unsigned long)NULL);
-// }

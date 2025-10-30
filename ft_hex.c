@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 20:06:40 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/29 14:18:26 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:29:12 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,3 @@ int	ft_upperhex(unsigned int n)
 	v = base[nb % 16];
 	return (print + write(1, &v, sizeof(v)));
 }
-// int main()
-// {
-// 	printf("%x\n", 42);
-// 	ft_hex(42);
-// }

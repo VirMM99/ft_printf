@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:24:53 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/29 14:19:35 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/10/29 17:30:14 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,5 @@ int	ft_putnbr(int n);
 int	ft_uputnbr(unsigned int n);
 int	ft_putptr(unsigned long n);
 int	ft_putstr(char *s);
-
-// # define HEX
-// # define HEX
 
 #endif
