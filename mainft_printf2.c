@@ -6,7 +6,7 @@
 /*   By: vimirand <vimirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 19:27:27 by vimirand          #+#    #+#             */
-/*   Updated: 2025/10/30 20:08:21 by vimirand         ###   ########.fr       */
+/*   Updated: 2025/11/03 11:48:31 by vimirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int	main()
 
 	printf("test llega auqi 1\n");
 	mine = ft_printf(NULL);
-	
+
 	printf("test llega auqi 2\n");
 	orig = printf(NULL);
-	
+
 	printf("test llega auqi 3\n");
 
 	printf("MIO: %d ORIG: %d\n", mine, orig);
@@ -75,8 +75,8 @@ int	main()
 
 	printf("MIO: %d ORIG: %d\n", mine, orig);
 
-	mine = ft_printf("%%%%\n", 1);
-	orig = printf("%%%%\n", 1);
+	mine = ft_printf(NULL);
+	orig = printf(NULL);
 
 	printf("MIO: %d ORIG: %d\n", mine, orig);
 }
